@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="color: white; padding: 20px;">
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <video autoplay muted loop id="video-background">
+        <source src="background video.mp4" type="video/mp4">
+        <source src="background video.mp4" type="video/webm">
+    </video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('video-background');
+            video.play();
+        });
+    </script>
+</body>
+
+</html>
