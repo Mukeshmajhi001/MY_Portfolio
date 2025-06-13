@@ -162,7 +162,6 @@ nav a:hover {
 
     nav {
         display: flex;
-        flex-direction: column;
     }
 
     nav a {

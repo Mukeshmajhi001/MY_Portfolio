@@ -26,3 +26,4 @@ document.querySelectorAll('.floating-nav a').forEach(link => {
         this.classList.add('active');
     });
 });
+    
